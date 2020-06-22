@@ -1,4 +1,4 @@
-package de.thunderfrog.dir2list;
+package de.thunderfrog.dir2list.filter;
 
 import java.io.File;
 import javax.swing.filechooser.FileFilter;
