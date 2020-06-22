@@ -6,7 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e276de03-f2c4-4f6b-9c6c-4590e44594cd" name="Default Changelist" comment="" />
+    <list default="true" id="e276de03-f2c4-4f6b-9c6c-4590e44594cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/de/thunderfrog/dir2list/FileTypeFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dir2list.GUI/META-INF/dir2list.GUI.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dir2list.GUI/de/thunderfrog/dir2list/MainApp$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dir2list.GUI/de/thunderfrog/dir2list/MainApp$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dir2list.GUI/de/thunderfrog/dir2list/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dir2list.GUI/de/thunderfrog/dir2list/MainApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/thunderfrog/dir2list/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/thunderfrog/dir2list/MainApp.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +27,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1dYQo2IMghMXpJA4I1GRmia1RAT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -27,6 +38,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />

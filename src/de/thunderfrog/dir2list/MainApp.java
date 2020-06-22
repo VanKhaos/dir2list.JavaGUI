@@ -1,6 +1,8 @@
 package de.thunderfrog.dir2list;
 
 import javax.swing.*;
+import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -53,12 +55,22 @@ public class MainApp {
         createListButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame DialogFrame = new JFrame("Enter Filename");
-                Filename = JOptionPane.showInputDialog(DialogFrame,"Filename:");
-                // Check Filename Empty
-                if(!Filename.equals("")){
+                JFrame DialogFrame = new JFrame();
+                JFileChooser fileChooser = new JFileChooser();
+
+                FileFilter txtFilter = new FileTypeFilter(".txt", "Text Document");
+                fileChooser.addChoosableFileFilter(txtFilter);
+
+                fileChooser.setAcceptAllFileFilterUsed(false);
+
+                fileChooser.setDialogTitle("Save dir2list File");
+
+                int userSelection = fileChooser.showSaveDialog(DialogFrame);
+
+                if(userSelection == JFileChooser.APPROVE_OPTION){
                     try {
-                        FileWriter FolderWriter = new FileWriter(Filename + ".txt");
+                        File Filename = fileChooser.getSelectedFile();
+                        FileWriter FolderWriter = new FileWriter(Filename.getAbsolutePath());
                         // File Header
                         FolderWriter.write("dir2list Folders\n\n");
                         // Write Array to File
@@ -70,12 +82,7 @@ public class MainApp {
                     } catch (IOException ex) {
                         ex.printStackTrace();
                     }
-
-                }else{
-                    JOptionPane.showMessageDialog(null, "Please Enter Filename");
                 }
-
-
             }
         });
     }
